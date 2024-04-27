@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+      <img class="logo2" src="logo2.jpeg" alt="some_img">
+    </div>
+        <Form action='/predict' method='POST' className="form-container ma2" class="form-container ma2" >
+          <Form.Group className="ma2" class="form-group">
+            <Form.Label><p class="labl">Number Of Riders</p></Form.Label>
+            <Input
+              class = "input-field"
+              name = "rider"
+              text='number of riders'
+              value=""
+              onChange={this.handleNumRidersChange}
+            />
+          </Form.Group>
+          <Form.Group className="ma2" class="form-group">
+            <Form.Label><p class="labl">Number Of Drivers</p></Form.Label>
+            <Input
+              class = "input-field"
+              name = "driver"
+              text='number of drivers'
+              value=""
+              onChange={this.handleNumDriversChange}
+            />
+          </Form.Group>
+          <Form.Group className="ma2" class="form-group">
+            <Form.Label><p class="labl">Number Of Vehicles</p></Form.Label>
+            <Input
+              class = "input-field"
+              name="type_vehicle"
+              text='vehicle type'
+              value=""
+              onChange={this.handleVehicleTypeChange}
+            />
+          </Form.Group>
+          <Form.Group className="ma2" class="form-group">
+            <Form.Label><p class="labl">Duration in minutes</p></Form.Label>
+            <Input 
+              class = "input-field"
+              name = "duration"
+              text='expected ride duration'
+              value=""
+              onChange={this.handleExpectedDurationChange}
+            />
+          </Form.Group>
+          <Button class="generate-button" type="submit" variant="primary" size="lg" className="generate-button">Generate price</Button>
+        </Form>
+</body>
+</html>

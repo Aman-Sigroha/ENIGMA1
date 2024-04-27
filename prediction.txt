@@ -1,0 +1,10 @@
+!DOCTYPE html
+html
+head
+    titleRent Predictiontitle
+head
+body
+    h1Predicted Renth1
+    p{{ pred }}p
+body
+html
